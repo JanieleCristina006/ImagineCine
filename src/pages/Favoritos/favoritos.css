@@ -1,0 +1,149 @@
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.meus-filmes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+ul{
+   
+    width: 65%;
+    
+}
+
+.filmes-f{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.button-excluir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    font-size: 1.1rem;
+}
+
+.button-excluir:hover{
+    background-color: #c79230;
+}
+
+.details{
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+}
+
+
+.nenhum-filme{
+    text-align: center;
+}
+
+.voltar{
+   
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+@media(min-width:201px) and (max-width: 500px){
+    p{
+        font-size: 2.2rem;
+    }
+
+    ul{
+        width: 90%; 
+    }
+
+    span{
+        text-align: center;
+    }
+
+    li{
+        border: rgb(213, 211, 211) solid;
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+    }
+
+    .button-excluir{
+        width: 50px; 
+        height: 50px; 
+        background: transparent;
+        border-radius: 50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-size: 1.6rem;
+    }
+
+    .button-excluir:hover{
+        color: #d70303;
+        background: transparent;
+    }
+
+    .voltar{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media(min-width:501px) and (max-width: 900px){
+
+    ul{
+        width: 86%; 
+        
+    }
+
+    li{
+        
+        width: 100%;
+        height: 12vh;
+        display: flex;
+        
+    }
+
+    span{
+        font-size: 1.8rem;
+    }
+
+    .details{
+        font-size: 1.4rem;
+    }
+
+    .button-excluir{
+        width: 50px; 
+        height: 50px; 
+        background: transparent;
+        border-radius: 50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-size: 2rem;
+    }
+
+    .button-excluir:hover{
+        color: red;
+        background: transparent;
+    }
+}
